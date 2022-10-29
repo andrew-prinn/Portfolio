@@ -7,7 +7,9 @@ body {
 }
 
 .header {
-    border: 2px solid red;
+    position: sticky;
+    top: 0;
+   /*border: 2px solid red;*/
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -16,24 +18,21 @@ body {
     width: 100%;
 }
 
-.svg-container {
-    border: 2px solid blue;
-}
-
 #logo{
-    border: 2px solid yellow;
+   /* border: 2px solid yellow;*/
     height: 4em;
     display: flex;
     align-items: center;
+    padding-left: 1em;
 }
 
 #menu {
-    border: 2px solid orange;
+   /* border: 2px solid orange;*/
     color: white;
-    width: 20em;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }   
 ul {
     list-style: none;
@@ -41,7 +40,7 @@ ul {
     margin:0;
     padding:0;
     flex-direction: row;
-    border:2px solid green;
+   /* border:2px solid green;*/
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
   }
