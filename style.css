@@ -1,3 +1,47 @@
-*{
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
     background-color: rgb(40, 40, 48);
 }
+
+.header {
+    border: 2px solid red;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+}
+
+.svg-container {
+    border: 2px solid blue;
+}
+
+#logo{
+    border: 2px solid yellow;
+    height: 4em;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    border: 2px solid orange;
+    color: white;
+    width: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+ul {
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding:0;
+    flex-direction: row;
+    border:2px solid green;
+    justify-content: space-between;
+    width: 100%;
+  }
