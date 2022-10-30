@@ -18,33 +18,25 @@ body {
     flex-direction: row;
     justify-content: space-between;
     height: fit-content;
-    width: 100%;
 }
 
 #logo{
     height: 4em;
     display: flex;
     align-items: center;
-    padding-left: 1em;
+    margin-left: 1em;;
 }
 
-#menu {
-    color: white;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}   
 ul {
     list-style: none;
     display: flex;
-    margin:0;
-    padding:0;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 1em;;
     color: white;
+    border: 2px solid green;
+    width: 75em;
   }
 
   .main{
