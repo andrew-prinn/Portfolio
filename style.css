@@ -1,16 +1,18 @@
 * {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 body {
     margin: 0;
     background-color: rgb(40, 40, 48);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    min-height: 100vh;
 }
 
 .header {
     position: sticky;
     top: 0;
-    border: 2px solid red;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -20,7 +22,6 @@ body {
 }
 
 #logo{
-   /* border: 2px solid yellow;*/
     height: 4em;
     display: flex;
     align-items: center;
@@ -28,7 +29,6 @@ body {
 }
 
 #menu {
-   border: 2px solid orange;
     color: white;
     width: 50%;
     display: flex;
@@ -41,9 +41,20 @@ ul {
     margin:0;
     padding:0;
     flex-direction: row;
-    border:2px solid green;
     justify-content: space-around;
     align-items: center;
     width: 50%;
     color: white;
+  }
+
+  .main{
+    color:floralwhite;
+    margin: 2em;
+  }
+
+  .footer{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: auto;
   }
