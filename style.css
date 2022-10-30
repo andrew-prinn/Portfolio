@@ -13,7 +13,7 @@ body {
 .header {
     position: sticky;
     top: 0;
-    background-color: black;
+    backdrop-filter: blur(3px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,6 @@ body {
 }
 
 #logo{
-    height: 4em;
     display: flex;
     align-items: center;
     margin-left: 1em;;
@@ -34,7 +33,7 @@ ul {
     align-items: center;
     justify-content: space-evenly;
     margin-right: 1em;;
-    color: white;
+    color: floralwhite;
     width: 75em;
   }
 
@@ -44,7 +43,9 @@ ul {
 
   .main{
     color:floralwhite;
-    margin: 2em;
+    margin: 0;
+    border: 2px solid black;
+    padding: 2em;;
   }
 
   .footer{
