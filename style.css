@@ -38,6 +38,10 @@ ul {
     width: 75em;
   }
 
+  li {
+    font-size: 1em;
+  }
+
   .main{
     color:floralwhite;
     margin: 2em;
