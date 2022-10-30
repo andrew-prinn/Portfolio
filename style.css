@@ -56,8 +56,8 @@ ul {
     justify-content: space-around;
     border: 2px solid yellow;
   }
-  #linkedIn-logo {
-    height: 32px;
+  .logo {
+    height: 4vh;
   }
   .footer{
     background-color: black;
