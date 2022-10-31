@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Prinn</title>
-    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-            <div id="logo"><img src="AP.svg" alt=""></div>      
+            <div id="logo"><img src="Andrew Prinn.svg" alt=""></div>      
             <ul>
                 <li>Home</li>
                 <li>Portfolio</li>
@@ -41,6 +41,22 @@
             <p>Phasellus suscipit mi tristique est venenatis, et tempor neque maximus. Aenean convallis viverra nisl, eu vehicula odio placerat sed. Curabitur accumsan dolor sed erat tempor gravida. Duis molestie ullamcorper dapibus. Nullam ac sagittis odio. Nullam aliquet dictum vulputate. Duis at euismod metus. Suspendisse pharetra erat quis dui elementum, sed pulvinar est pretium. Maecenas quis ipsum quis leo commodo gravida eget nec est. Mauris condimentum non magna nec efficitur. Nunc scelerisque pulvinar nisl, vitae feugiat nisi vehicula non. Fusce ornare nisi sed magna consectetur auctor ut nec libero. Ut ante massa, sagittis non tellus eget, condimentum imperdiet enim.</p>
     </div>
     <div class="contact-form">
+        <form action="example.com/path" method="post">
+            <h2>Contact</h2> 
+            <textarea id="textArea"placeholder="Say hello!"></textarea>
+            <div class="name">
+                <input type="text" name="first_name" id="first-name" placeholder="First name">
+                <input type="text" name="last_name" id="last-name" placeholder="Last name">
+            </div>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+            <div id="button-container">
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="footer">
         <div id="logo-container">
             <a href = "https://github.com/Andrew-Prinn">
                 <img id = "gitHub-logo" src ="GitHub-Mark 2/PNG/GitHub-Mark-Light-32px.png">
@@ -49,22 +65,6 @@
                 <img id="linkedIn-logo" class="logo" src="LinkedIn-Logos copy/LI-In-Bug.png" alt="">
             </a>
         </div>
-        <form action="example.com/path" method="post">
-            <div>
-                <input type="text" name="first_name" id="first_name" placeholder="First name">
-                <input type="text" name="last_name" id="last_name" placeholder="Last name">
-            </div>
-            <div id="comment-and-email">
-                <input type="email" name="email" id="email" placeholder="youremail@example.com">
-                <textarea placeholder="Say hello!"></textarea>
-            </div>
-            <div id="button-container">
-                <button type="reset">Clear</button>
-                <button type="submit">Submit</button>
-            </div>
-
-        </form>
-    </div>
-    <div class="footer">© Andrew Prinn 2022</div>
+        © Andrew Prinn 2022</div>
 </body>
 </html>
