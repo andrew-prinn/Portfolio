@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    position: sticky;
+    position:sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.286);
     backdrop-filter: blur(5px);
@@ -46,8 +46,7 @@ ul {
     color:floralwhite;
     margin: 0;
     padding: 2em;
-    width: 25vw;
-    margin-left: 10vw;
+    margin: 10vw;
   }
 
   .contact-form{
