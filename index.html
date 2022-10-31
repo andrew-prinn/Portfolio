@@ -41,9 +41,27 @@
             <p>Phasellus suscipit mi tristique est venenatis, et tempor neque maximus. Aenean convallis viverra nisl, eu vehicula odio placerat sed. Curabitur accumsan dolor sed erat tempor gravida. Duis molestie ullamcorper dapibus. Nullam ac sagittis odio. Nullam aliquet dictum vulputate. Duis at euismod metus. Suspendisse pharetra erat quis dui elementum, sed pulvinar est pretium. Maecenas quis ipsum quis leo commodo gravida eget nec est. Mauris condimentum non magna nec efficitur. Nunc scelerisque pulvinar nisl, vitae feugiat nisi vehicula non. Fusce ornare nisi sed magna consectetur auctor ut nec libero. Ut ante massa, sagittis non tellus eget, condimentum imperdiet enim.</p>
     </div>
     <div class="contact-form">
-        <img id="gitHub-logo" class="logo" src="GitHub-Mark 2/PNG/GitHub-Mark-Light-32px.png" alt="">
-        <img id="linkedIn-logo" class="logo" src="LinkedIn-Logos copy/LI-In-Bug.png" alt="">
-        <form action="">
+        <div id="logo-container">
+            <a href = "https://github.com/Andrew-Prinn">
+                <img id = "gitHub-logo" src ="GitHub-Mark 2/PNG/GitHub-Mark-Light-32px.png">
+            </a>
+            <a href="https://www.linkedin.com/in/andrew-prinn-5821611a5/">
+                <img id="linkedIn-logo" class="logo" src="LinkedIn-Logos copy/LI-In-Bug.png" alt="">
+            </a>
+        </div>
+        <form action="example.com/path" method="post">
+            <div>
+                <input type="text" name="first_name" id="first_name" placeholder="First name">
+                <input type="text" name="last_name" id="last_name" placeholder="Last name">
+            </div>
+            <div id="comment-and-email">
+                <input type="email" name="email" id="email" placeholder="youremail@example.com">
+                <textarea placeholder="Say hello!"></textarea>
+            </div>
+            <div id="button-container">
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </div>
 
         </form>
     </div>
