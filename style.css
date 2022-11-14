@@ -108,15 +108,16 @@ li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding-top: 1em;
   border-radius: 8px;
   background-color: rgb(50, 50, 57);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(0, 0, 0, 0.25);
 }
 .project img{ 
   height: 15em;
   width: 23em;
-  padding: 1em;
+  margin-top: 1em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(0, 0, 0, 0.25);
+
 }
 
 form {
@@ -125,7 +126,7 @@ form {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 1em;
+  
     height: auto;
     width: 90vw;
     border-radius: 8px;
