@@ -89,10 +89,16 @@ li a:hover {
 }
 
 #bio {
+  width: 90%;
+  margin: 1em;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  justify-content: left;
 }
+  #bio h3 {
+    max-width: 500px;
+    display: inline-block;
+  }
 #portfolio { 
   width: 85vw;
   display: grid;
