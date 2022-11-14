@@ -1,8 +1,3 @@
-@font-face {
-    font-family: inter;
-    src: url(Inter/Inter-VariableFont_slnt\,wght.ttf);
-}
-
 * {
     font-family: Helvetica, Poppins, Arial, Helvetica, sans-serif;
     color: floralwhite;
@@ -11,30 +6,26 @@
 body {
     margin: 0;
     background-color: rgb(40, 40, 48);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
+    grid-row: 1 / 2;
     position:sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.286);
     backdrop-filter: blur(3px);
     height: fit-content;
-    width: 100%;
+    width: 100vw;
     border-bottom: 2px solid black;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20%;
-}
-
-#logo {
-  grid-area: 1 / 1 / 3 / 5;
-  display: flex;
-  align-items: center;
-  width: 30%;
+    grid-template-columns: 1fr 1fr;
 }
 
 .boujee-text {
@@ -44,7 +35,7 @@ body {
   --color-two: hsl(40 95% 55%);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
-  font-size: clamp(2rem, 25vmin, 3rem);
+  font-size: clamp(1rem, 5vmin, 2rem);
   background: linear-gradient(
       90deg,
       pink,
@@ -61,7 +52,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .boujee-text {
-    animation: move-bg 60s linear infinite;
+    animation: move-bg 45s linear infinite;
   }
   @keyframes move-bg {
     to {
@@ -70,124 +61,157 @@ body {
   }
 }
 
-
+#links { 
+  display: flex;
+  justify-content: space-around;
+}
 ul {
-    grid-area: 1 / 4 / 3 / 9;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1rem;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-  .main{
-    width: auto;
-    
-  }
+li {
+  float: right;
+}
 
-  form {
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+#bio {
+  display: flex;
+  width: 90vw;
+}
+#portfolio { 
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2em;
+  padding: 2em;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.project img{ 
+  height: 15em;
+  padding: 1em;
+}
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 1em;
     height: auto;
-    width: auto;
-    margin: 1em;
+    width: 350px;
     border-radius: 8px;
     background-color: rgb(50, 50, 57);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(0, 0, 0, 0.25);
   }
 
-  input {
-    border: 2px solid #000;
-    padding: 5px;
-    border-radius: 5px;
-  }
-
-  #textArea {
-    color: black;
-    min-height: 10em;
-    min-width: 22em;
-    border: 2px solid #000;
-    padding: 9px;
-    border-radius: 5px;
-  }
-
-  .name {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1em;
-  }
-
-  #first-name {
-    margin-right: 0.5em;
-    width: 40%;
-    color: black;
-  }
-  #last-name {
-    margin-right:0;
-    width: 40%;
-    color: black;
-  }
-  #email {
-    width: 91%;
-    margin-top: 1em;
-    color: black;
-  }
-
-  #button-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  button {
-    margin: 1em;
-    border: none;
-    cursor: pointer;
-    transition: all;
-    transition-duration: 250ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
-    background-color: #e8ecf2;
-    color: #73787d;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    input {
+      border: 2px solid #000;
+      padding: 5px;
+      border-radius: 5px;
     }
-    
-    button:hover{
-        color: white;
+
+    #textArea {
+      color: black;
+      min-height: 10em;
+      min-width: 22em;
+      border: 2px solid #000;
+      padding: 9px;
+      border-radius: 5px;
     }
-    
-    button:active{
-        box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
-            1px 1px 5px rgba(0, 0, 0, 0.3), 
-            inset -2px -2px 5px rgba(255, 255, 255, 1),
-            inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    .name {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1em;
     }
+
+    #first-name {
+      margin-right: 0.5em;
+      width: 40%;
+      color: black;
+    }
+    #last-name {
+      margin-right:0;
+      width: 40%;
+      color: black;
+    }
+    #email {
+      width: 91%;
+      margin-top: 1em;
+      color: black;
+    }
+
+    #button-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      margin: 1em;
+      border: none;
+      cursor: pointer;
+      transition: all;
+      transition-duration: 250ms;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      background-color: #e8ecf2;
+      color: #73787d;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+      }
+      
+      button:hover{
+          color: white;
+      }
+      
+      button:active{
+          box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
+              1px 1px 5px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 5px rgba(255, 255, 255, 1),
+              inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
 
   .footer{
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: black;
     text-align: center;
-    margin-top: 1em;
-    width: 100%;
-    padding: 20px;
+    width: 100vw;
+    padding: 1em;
   }
 
-  #logo-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-  }
-  .logo {
-    height: 4vh;
-    margin-left: 1em;
-  }
+    #logo-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo {
+      height: 4vh;
+      margin-left: 1em;
+    }
