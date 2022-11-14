@@ -16,19 +16,18 @@ body {
 }
 
 .header {
-    grid-row: 1 / 2;
+    width: 100vw;
     position:sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.286);
     backdrop-filter: blur(3px);
     height: fit-content;
-    width: 100vw;
     border-bottom: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.boujee-text {
+.animated-text {
   margin: 1rem;
   --bg-size: 600%;
   --color-one: hsl(15 90% 55%);
@@ -51,7 +50,7 @@ body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .boujee-text {
+  .animated-text {
     animation: move-bg 45s linear infinite;
   }
   @keyframes move-bg {
@@ -91,20 +90,21 @@ li a:hover {
 
 #bio {
   display: flex;
+  flex-direction: column;
   width: 90vw;
-  margin: 10em;
+  margin-left: 2em;
 }
 #portfolio { 
   width: 85vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 3em;
   padding: 1em;
   border-radius: 8px;
 }
 
 .project {
-  width: 23em;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,13 +127,14 @@ form {
     align-items: center;
     padding: 1em;
     height: auto;
-    width: 45vw;
+    width: 90vw;
     border-radius: 8px;
     background-color: rgb(50, 50, 57);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(0, 0, 0, 0.25);
   }
 
     input {
+      width: 25em;
       border: 2px solid #000;
       border-radius: 5px;
     }
@@ -141,14 +142,14 @@ form {
     #textArea {
       color: black;
       min-height: 10em;
-      width: 30em;
+      width: 25em;
       border: 2px solid #000;
       border-radius: 5px;
     }
 
     #name {
-      width: 400px;
       display: flex;
+      width: 21em;
       justify-content: space-between;
       margin-top: 1em;
     }
@@ -162,7 +163,6 @@ form {
       padding-bottom: .5em;
     }
     #email {
-      width: 400px;
       margin-top: 1em;
       color: black;
       padding-top: .5em;
@@ -211,11 +211,13 @@ form {
     background-color: black;
     text-align: center;
     width: 100vw;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
     #logo-container {
       display: flex;
+      align-items: center;
       justify-content: space-between;
     }
     .logo {
