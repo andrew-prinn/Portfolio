@@ -123,8 +123,6 @@ li a:hover {
   width: 23em;
   max-width: 100%;
   margin-top: 1em;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
 form {
